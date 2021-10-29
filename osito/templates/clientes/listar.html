@@ -11,11 +11,11 @@
       </tr>
     </thead>
     <tbody>
-        {% for venta in ventas %}
+        {% for cliente in clientes %}
       <tr>
         <td>{{venta.id}}</td>
-        <td>{{venta.total}}</td>
-        <td>{{venta.sub_total}}</td>
+        <td>{{venta.nombre}}</td>
+        <td>{{venta.apellidos}}</td>
       </tr>
       {% endfor %}
       <tr>
