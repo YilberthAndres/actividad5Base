@@ -1,0 +1,27 @@
+{% extends 'base/base.html' %}
+{% block content%}
+    <center> <h3>Listados de clientes </h3></center>
+    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Descripcion</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Numero Existencia</th>
+    </tr>
+  </thead>
+  <tbody>
+        {% for producto in productos %}
+                    <tr>
+                            <td>{{ producto.id }}</td>
+                            <td>{{ producto.descripcion }}</td>
+                            <td>{{ producto.precio }}</td>
+                            <td>{{ producto.numero_exit }}</td>
+                    </tr>
+        {% endfor %}
+  </tbody>
+  <tbody>
+   
+  </tbody>
+</table>
+{% endblock %}
