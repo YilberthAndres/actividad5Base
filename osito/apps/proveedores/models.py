@@ -7,7 +7,7 @@ class Proveedore(models.Model):
     apellido= models.CharField(max_length=100)
     direccion = models.CharField(max_length=100)
     provincia = models.CharField(max_length=100)
-    telefono = models.IntegerField(max_length=12)
+    telefono = models.CharField(max_length=12)
     productos = models.ManyToManyField(Producto, through= 'Distribuidos')
     
     
