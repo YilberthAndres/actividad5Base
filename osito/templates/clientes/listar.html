@@ -9,7 +9,6 @@
     <table class="table table-striped">
         <thead>
           <tr>
-            <th scope="col">#</th>
             <th scope="col">ID</th>
             <th scope="col">Nombre</th>
             <th scope="col">Apellidos</th>
@@ -18,9 +17,9 @@
         <tbody>
             {% for cliente in clientes %}
           <tr>
-            <td>{{venta.id}}</td>
-            <td>{{venta.nombre}}</td>
-            <td>{{venta.apillidos}}</td>
+            <td>{{cliente.id}}</td>
+            <td>{{cliente.nombre}}</td>
+            <td>{{cliente.apellidos}}</td>
           </tr>
           {% endfor %}
         </tbody>
