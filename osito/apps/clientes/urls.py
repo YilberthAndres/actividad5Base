@@ -3,5 +3,5 @@ from apps.clientes.views import index
 app_name = "ventas";
 
 urlpatterns = [
-    path('mostrarClientes', index)
+    path('', index)
 ]
